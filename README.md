@@ -10,6 +10,13 @@ Some of the useful functions in Js
         replace(/\n +/, "\n"); // Removes spaces after newlines
         return;
   }
+
+
+
+
+  
+
+  
 //ToTrimAlphabets
     function trimAlpha(el) {
         el.value = el.value.
