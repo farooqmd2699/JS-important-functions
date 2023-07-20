@@ -1,0 +1,30 @@
+<div class="container">
+  <h2><?php echo $heading_title; ?></h2>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Entry ID</th>
+          <th>Input 1</th>
+          <th>Input 2</th>
+          <th>Input 3</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($entries as $entry) { ?>
+          <tr>
+            <td><?php echo $entry['entry_id']; ?></td>
+            <td><?php echo $entry['input1']; ?></td>
+            <td><?php echo $entry['input2']; ?></td>
+            <td><?php echo $entry['input3']; ?></td>
+            <td>
+              <a href="<?php echo $remove_link . '&entry_id=' . $entry['entry_id']; ?>" class="btn btn-danger btn-sm">Remove</a>
+            </td>
+          </tr>
+        <?php } ?>
+      </tbody>
+    </table>
+  </div>
+  <a href="<?php echo $add_link; ?>" class="btn btn-primary">Add New Entry</a>
+</div>
