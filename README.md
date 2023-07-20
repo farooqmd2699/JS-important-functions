@@ -1,4 +1,4 @@
-# JS-important-functions
+# JS-important-functions https://chat.openai.com/share/d1afcd6b-3085-47f2-b838-806704f8e284
 Some of the useful functions in Js
 
 
